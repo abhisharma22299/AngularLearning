@@ -1,0 +1,47 @@
+// create a new angular project
+ng new name
+
+// to add material ui 
+
+ng add @angular/material
+
+// to use boot strap grid system in agular we need to add link to https://github.com/dmhendricks/bootstrap-grid-css  
+// use this command in 
+step 1 : npm install bootstrap-grid-only-css --save 
+
+// to make a directory use mkdir
+
+// to genrate component use  ng g c  signup(component_name) 
+
+
+// to use the bootstrap grid system in the  you have to set the path , there is node_module file there is bootstrap-grid-only-css 
+step 1 : there is angular.json and in that there is style add path of node_module "./node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css" 
+
+// to start the port we use
+ng serve
+
+// to create a componenet in angular 
+
+ng g c demo(componenet-name)
+
+.. to add the data in the data base we have to use formModule
+
+// if we want to bind to the data to the our data base with angular we use 
+step 1 : Create a function name user and create the field given in the data base fileds in components.ts file 
+
+       : for the submit the form we user (ngSubmit)="FormSubmit()"
+
+step 2 : two bind the data in the data base we user [(ngModel)]="user.password(as database in )"
+
+step 3 : if we want to connect with our http serve we need to imort the HttpClientModule import { HttpClientModule } from '@angular/common/http';
+
+step 4 : if you want to enable your form you have to import FormsModule import{FormsModule} from  '@angular/forms'
+
+// to add form field action user <form  (ngSubmit)="FormSubmit()" >
+
+// to add to data use input it  [(ngModel)]="user.userName"
+
+// this is to bind the your angular data to your intellij data you were need to add http request import { HttpClientModule } from '@angular/common/http';
+
+// create a services folder in src/app  in this create a service name user code ng g s (serviceName)
+// create  helper.ts file in services and this give the url of the server where is running your spring project
